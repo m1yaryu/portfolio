@@ -118,3 +118,7 @@ footer { text-align: center; color: var(--muted); padding: 2rem 1rem 3rem; }
 	html { scroll-behavior: auto; }
 	body { transition: none; }
 }
+
+/* Placeholder that swaps to its image when the file exists */
+.ph { font-size: .85rem; word-break: break-all; background-size: cover; background-position: center; }
+.ph.loaded { background-repeat: no-repeat; background-size: contain; background-color: var(--surface); color: transparent; border-style: solid; border-color: var(--line); }

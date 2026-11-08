@@ -16,3 +16,21 @@ toggleButton.addEventListener('click', () => {
     applyTheme(isDark);
     try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
 });
+
+// Show each placeholder's image (data-src) once the file loads.
+// If it can't be found, the box says which file it was looking for.
+document.querySelectorAll('.ph[data-src]').forEach(box => {
+    const src = box.dataset.src;
+    box.textContent = 'Looking for: ' + src;
+    const img = new Image();
+    img.onload = () => {
+        box.style.backgroundImage = `url("${src}")`;
+        box.textContent = '';
+        box.classList.add('loaded');
+    };
+    img.onerror = () => {
+        box.textContent = 'File not found: ' + src;
+        console.warn('Image not found:', src);
+    };
+    img.src = src;
+});
