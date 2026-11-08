@@ -1,48 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">RYU HENRY MIYAZAKI (宮﨑 龍)</h1>
-         <img src="profile.jpeg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">BS Computer Science (IT103) - 2025</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Achievement 1</li>
-		<ul>
-		<li>ITS Java Specialist</li>
-		</ul>
-            <li>Achievement 2</li>
-		<ul>
-		<li>Internal & External Affairs Head of SPACE DAVAO</li>
-		</ul>
-            <li>Achievement 3</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Project 1</li>
-		      <ul>
-		         <a href='https://github.com/m1yaryu/SakayKa-Admin-Dashboard'><li>SakayKa Admin Dashboard</li></a>
-		      </ul>
-            <li>Project 2</li>
-		      <ul>
-		         <a href='https://github.com/m1yaryu/KRT-Digitzed-Log-System'><li>KRT Digitized Log System</li></a>
-		      </ul>
-            <li>Project 3</li>
-            <ul>
-               <a href="https://how-t0-say-no.vercel.app/"><li>How to say no</li></a>
-            </ul>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryu Henry Miyazaki | Student Portfolio</title>
+  <meta name="description" content="Portfolio of Ryu Henry Miyazaki, BS Computer Science student: projects, certificates and awards.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Sections">
+    <ul>
+      <li><a href="#final-project">Final project</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#awards">Award</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+    </ul>
+    <button id="theme-toggle" type="button" aria-pressed="false">Switch theme</button>
+  </nav>
+
+  <header class="hero">
+    <img src="profile.jpeg" alt="Portrait of Ryu Henry Miyazaki" id="profile-img">
+    <div>
+      <h1 id="name">Ryu Henry Miyazaki <span lang="ja">宮﨑 龍</span></h1>
+      <p id="course-year">BS Computer Science (IT103) · 2025</p>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- FINAL PROJECT -->
+    <section id="final-project">
+      <h2>Final project</h2>
+      <article class="feature">
+        <h3>BeeAware: Application Usage Monitoring and Time Management System for Habit Improvement</h3>
+        <p>BeeAware is a productivity tool that monitors your current window and uses machine learning to tell whether you're being productive or distracted.</p>
+        <p><a class="btn" href="https://github.com/m1yaryu" target="_blank" rel="noopener">View prototype on GitHub</a></p>
+
+        <h4>Screenshots</h4>
+        <div class="grid grid-3">
+          <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for BeeAware screenshot 1">Screenshot 1</div><figcaption>Describe this screen</figcaption></figure>
+          <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for BeeAware screenshot 2">Screenshot 2</div><figcaption>Describe this screen</figcaption></figure>
+          <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for BeeAware screenshot 3">Screenshot 3</div><figcaption>Describe this screen</figcaption></figure>
+        </div>
+
+        <h4>Final project certificate</h4>
+        <figure class="shot cert-wide"><div class="ph" role="img" aria-label="Placeholder for final project certificate">Final project certificate</div></figure>
+      </article>
+    </section>
+
+    <!-- PREVIOUS PROJECTS -->
+    <section id="projects">
+      <h2>Previous projects</h2>
+      <ul class="grid grid-3 cards">
+        <li><a href="https://github.com/m1yaryu/SakayKa-Admin-Dashboard" target="_blank" rel="noopener"><strong>SakayKa Admin Dashboard</strong><span>View on GitHub</span></a></li>
+        <li><a href="https://github.com/m1yaryu/KRT-Digitzed-Log-System" target="_blank" rel="noopener"><strong>KRT Digitized Log System</strong><span>View on GitHub</span></a></li>
+        <li><a href="https://how-t0-say-no.vercel.app/" target="_blank" rel="noopener"><strong>How to say no</strong><span>Visit live site</span></a></li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+      <h2>Coursera certificates</h2>
+      <div class="grid grid-4" id="coursera-grid">
+        <!-- Replace each .ph with <img src="certs/your-file.jpg" alt="..."> -->
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 1">Certificate 1</div><figcaption>Course name</figcaption></figure>
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 2">Certificate 2</div><figcaption>Course name</figcaption></figure>
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 3">Certificate 3</div><figcaption>Course name</figcaption></figure>
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 4">Certificate 4</div><figcaption>Course name</figcaption></figure>
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 5">Certificate 5</div><figcaption>Course name</figcaption></figure>
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 6">Certificate 6</div><figcaption>Course name</figcaption></figure>
+        <figure class="shot"><div class="ph" role="img" aria-label="Placeholder for Coursera certificate 7">Certificate 7</div><figcaption>Course name</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <h2>Award</h2>
+      <article class="feature">
+        <h3>Session B - Best Educational &amp; Healthcare Project</h3>
+        <figure class="shot cert-wide"><div class="ph" role="img" aria-label="Placeholder for award certificate">Award certificate</div></figure>
+        <h4>Reflection</h4>
+        <blockquote>
+          <p>I was included in the group last minute. Honestly, I am incredibly grateful for my groupmates for accepting me regardless. This award is a testament of me keeping my promise of not letting them down. Not only did I help in the remaining documents but I also helped my groupmates in creating a captivating and informative pitch deck.</p>
+          <p>I did not expect to receive this award, but my groupmates definitely deserved it. I saw how hard they worked for it, and I am glad that I was, at the very least, able to reduce the burden of this project.</p>
+        </blockquote>
+      </article>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <h2>Achievements and certifications</h2>
+      <ul class="list">
+        <li>ITS Java Specialist</li>
+        <li>Internal &amp; External Affairs Head of SPACE DAVAO</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>© 2025 Ryu Henry Miyazaki</p></footer>
+  <script src="script.js"></script>
+</body>
 </html>
